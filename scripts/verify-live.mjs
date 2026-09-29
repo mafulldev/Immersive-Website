@@ -50,7 +50,8 @@ async function check(label, viewport, reduced) {
     h1: document.querySelector('h1')?.textContent?.replace(/\s+/g, ' ').trim() ?? null,
     posterHidden: document.querySelector('.poster')?.classList.contains('is-hidden') ?? null,
     canvas: Boolean(document.querySelector('canvas')),
-    sections: document.querySelectorAll('main > section').length,
+    // Descendente, não filho direto: o ScrollTrigger envolve a seção pinada num .pin-spacer.
+    sections: document.querySelectorAll('main section').length,
   }));
 
   if (!state.title.includes('CAUDAL')) problems.push(`title inesperado: ${state.title}`);
