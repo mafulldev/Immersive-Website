@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  // Subcaminho de publicação (GitHub Pages usa /<repo>/). Padrão '/' para Netlify, Vercel e dev.
+  base: process.env.VITE_BASE ?? '/',
   plugins: [react(), tailwindcss()],
   build: {
     target: 'es2022',
