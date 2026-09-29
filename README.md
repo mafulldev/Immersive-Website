@@ -1,5 +1,7 @@
 # CAUDAL — Vibe coding com engenharia de verdade
 
+Ao vivo: https://mafulldev.github.io/Immersive-Website/ (GitHub Pages, publicado pelo workflow em `.github/workflows/deploy.yml`). O `netlify.toml` deixa o projeto pronto para a Netlify (`caudal-site`) quando o repositório for ligado lá.
+
 Site imersivo one-page, em português do Brasil, sobre vibe coding. A tese: toda criação feita com IA precisa de um profissional competente por trás.
 
 A metáfora é uma cachoeira de código que desce **do caos ao critério**: um monólito de dados (a IA) despeja uma torrente turbulenta, a água atravessa o Núcleo de Revisão (o profissional), onde os problemas são detectados e corrigidos um a um, e termina num lago calmo e espelhado (o produto estável em produção). Rolar a página é descer a cachoeira: o site inteiro é um único mundo contínuo em WebGL, sem cortes de cena.
@@ -59,7 +61,7 @@ Em `src/content/copy.ts` → `BRAND`:
 | `tagline` | Código. Critério. Confiança. | `BRAND.tagline` |
 | `ctaUrl` | `#contato` | `BRAND.ctaUrl` (troque por WhatsApp ou Calendly) |
 | `year` | 2026 | `BRAND.year` |
-| `siteUrl` | https://caudal.dev/ | `BRAND.siteUrl` e as metas em `index.html` |
+| `siteUrl` | https://mafulldev.github.io/Immersive-Website/ | `BRAND.siteUrl` e as metas em `index.html` |
 
 Os números do HUD e da seção "Por quê" são ilustrativos e ficam em `HERO.hud` e `WHY.numbers`.
 

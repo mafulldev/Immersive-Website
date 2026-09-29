@@ -45,7 +45,7 @@ let manifestPromise: Promise<PlatesManifest> | null = null;
 /** /world/plates.json lista os tiles de cada camada (de cima para baixo). Vazio = fallback procedural. */
 function loadManifest(): Promise<PlatesManifest> {
   if (!manifestPromise) {
-    manifestPromise = fetch('/world/plates.json', { cache: 'force-cache' })
+    manifestPromise = fetch(`${import.meta.env.BASE_URL}world/plates.json`, { cache: 'force-cache' })
       .then((res) => (res.ok && (res.headers.get('content-type') ?? '').includes('json') ? (res.json() as Promise<PlatesManifest>) : {}))
       .catch(() => ({}));
   }
@@ -62,7 +62,7 @@ async function loadLayer(layer: Layer): Promise<Tile[]> {
   const tiles: Tile[] = [];
   for (const file of files) {
     try {
-      const res = await fetch(`/world/${file}`, { cache: 'force-cache' });
+      const res = await fetch(`${import.meta.env.BASE_URL}world/${file}`, { cache: 'force-cache' });
       if (!res.ok) break;
       const blob = await res.blob();
       const bitmap = await createImageBitmap(blob);
