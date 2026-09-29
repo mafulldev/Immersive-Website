@@ -8,7 +8,7 @@ export const BRAND = {
   tagline: 'Código. Critério. Confiança.',
   ctaUrl: '#contato',
   year: 2026,
-  siteUrl: 'https://caudal.dev/',
+  siteUrl: 'https://caudal-site.netlify.app/',
 } as const;
 
 export const NAV = {
