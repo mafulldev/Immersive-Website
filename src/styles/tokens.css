@@ -1,0 +1,68 @@
+/* Design tokens — a única fonte de verdade para cores, tipografia e raios. */
+@theme {
+  --color-bg-0: #02050a;
+  --color-bg-1: #060d18;
+  --color-glass: rgba(9, 20, 36, 0.48);
+  --color-glass-strong: rgba(12, 26, 46, 0.62);
+  --color-line: rgba(128, 178, 255, 0.16);
+  --color-line-strong: rgba(128, 178, 255, 0.32);
+  --color-text-1: #eaf2ff;
+  --color-text-2: #a7b6cc;
+  --color-text-3: #62748c;
+  --color-blue-500: #2e9bff;
+  --color-blue-300: #7cc6ff;
+  --color-blue-100: #d6eeff;
+  --color-blue-700: #0e4fb8;
+  --color-danger: #ff4d4f;
+  --color-ok: #34d399;
+
+  --font-sans: 'Satoshi', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --radius-card: 14px;
+  --radius-panel: 18px;
+  --radius-tile: 10px;
+  --radius-pill: 999px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-24: 96px;
+  --spacing-32: 128px;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --ease-caudal: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --bg-0: #02050a;
+  --bg-1: #060d18;
+  --glass: rgba(9, 20, 36, 0.48);
+  --glass-strong: rgba(12, 26, 46, 0.62);
+  --line: rgba(128, 178, 255, 0.16);
+  --line-strong: rgba(128, 178, 255, 0.32);
+  --text-1: #eaf2ff;
+  --text-2: #a7b6cc;
+  --text-3: #62748c;
+  --blue-500: #2e9bff;
+  --blue-300: #7cc6ff;
+  --blue-100: #d6eeff;
+  --blue-700: #0e4fb8;
+  --danger: #ff4d4f;
+  --ok: #34d399;
+
+  --nav-h: 72px;
+  --container: 1240px;
+  --gutter: 24px;
+  --pad-x: clamp(20px, 4vw, 56px);
+  --ease-caudal: cubic-bezier(0.16, 1, 0.3, 1);
+}
